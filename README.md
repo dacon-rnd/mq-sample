@@ -31,6 +31,15 @@
   pip install pika
   pip install python-dotenv
   ```
+* `.env` 설정
+  - .env 파일 생성후 아래 내용 세팅
+  ```
+  RABBIT_MQ_ID={mq id}
+  RABBIT_MQ_PASSWORD={mq 비번}
+  RABBIT_MQ_VHOST={vhost name}
+  RABBIT_MQ_HOST={mq local-ip or localhost}
+  RABBIT_MQ_PORT={mq port or default : 5672}
+  ```
 * 실행
   ``` 
   $ python consumer.py
